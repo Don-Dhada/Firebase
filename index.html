@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Hero And City</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name">
+                <input type="text" name="city" placeholder="Cafe city">
+                <button>Add Hero</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+
+  //replace with your config code
+  var firebaseConfig = {
+    apiKey: "AIzaSyAcFytiVkV8jGY-6f2cCQ1TKRVmD8ZQdSM",
+    authDomain: "cafelist-5b671.firebaseapp.com",
+    databaseURL: "https://cafelist-5b671.firebaseio.com",
+    projectId: "cafelist-5b671",
+    storageBucket: "cafelist-5b671.appspot.com",
+    messagingSenderId: "636626596604",
+    appId: "1:636626596604:web:3875077212ecc905915d79",
+    measurementId: "G-S04V7DWVMT"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+
+  const db = firebase.firestore();
+  db.settings({ timestampsInSnapshots: true }); 
+
+
+  // Initialize Firebase
+</script>
+        <script src="app.js"></script>
+    </body>
+</html>
+
+
+
